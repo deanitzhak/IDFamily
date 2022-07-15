@@ -1,0 +1,1307 @@
+* {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a {
+  color: #111;
+  display: flex;
+}
+img {
+  filter: brightness(120%);
+  filter: contrast(120%);
+  filter: drop-shadow(2px 2px 2px black);
+}
+h4 {
+  font-size: 12px;
+  color: #d4d4d4;
+  margin-left: 3px;
+  width: fit-content;
+}
+
+h1 {
+  font-size: 16px;
+}
+
+h5 {
+  font-size: 12px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: clip;
+}
+
+#Wrapper {
+  height: 640px;
+  width: 360px;
+  margin: 0 auto;
+  background-color: white;
+}
+
+#headerHolder {
+  width: 360px;
+  height: 107px;
+  border-bottom: 4px #DFEDD6 solid;
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-auto-flow: column;
+}
+
+.profileHolder {
+  display: block;
+  width: 100px;
+  margin: auto;
+}
+.profileHolderNav{
+  display: block;
+  width: 100px;
+  margin-top: 5px;
+  margin-left: 14px;
+  margin: auto;
+}
+#navDesktop{
+  display: none;
+  width: 20%;
+  height: 2000px;
+  background-color: #DFEDD6;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+#navDesktop a{
+  text-align: center;
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+#navDesktop a:hover {
+  color: black;
+}
+#menuHolder {
+  display: block;
+  margin: auto;
+}
+#menuHolder span {
+  font-size:30px;cursor:pointer
+}
+#LightBox h2{
+  float: right;
+}
+#LightBox h3 {
+  float: right;
+}
+#LightBox p {
+  font-size: 12px;
+  float: right;
+}
+#LightBox select {
+  margin-left: 48px;
+}
+.submit-button {
+  float: right;
+  margin-top: 10px;
+}
+#logoHolder {
+  display: block;
+  margin: auto;
+}
+
+.profile2 {
+  background-image: url("../images/arielProfile1.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 64px;
+  width: 64px;
+  display: block;
+  margin-left: 26px;
+  margin-top: 5px;
+  margin: auto;
+}
+
+.profile {
+  background-image: url("../images/michaelProfile1.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 64px;
+  width: 64px;
+  display: block;
+  margin-left: 26px;
+  margin-top: 5px;
+  margin: auto;
+}
+
+.soldierName {
+  font-size: 16px;
+  text-align: center;
+}
+
+#logo {
+  background-image: url("../images/logo1.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 77.87px;
+  width: 90px;
+  display: block;
+  margin-left: 26px;
+  margin-top: 5px;
+}
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #DFEDD6;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  text-align: center;
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: black;
+}
+.closebtn {
+  color: #818181;
+  float: right;
+  font-size: 30px;
+}
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+#btnNav {
+  font-size:30px;cursor:pointer;
+}
+
+#beforeListHolder {
+  width: 100%;
+  height: 51px;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+}
+
+#listHolder {
+  position: relative;
+  text-decoration: none;
+  width: 360px;
+  height: 100%;
+}
+
+.solderObj {
+  width: 100%;
+  height: 117px;
+  display: flex;
+  align-items: center;
+}
+
+#solderObjnotequest {
+  width: 360px;
+  height: 117px;
+  display: flex;
+  margin-left: -7px;
+}
+
+#editingCotainer {
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+}
+
+.editingTubCotainer {
+  float: left;
+  margin-right: 6px;
+  margin-top: 15px;
+}
+
+.editingTubCotainer a {
+  float: right;
+  display: block;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.editingTubCotainer a.activeItem {
+  background: rgb(245, 245, 245);
+  color: black;
+}
+
+.editingTubCotainer a.nonActiveItem {
+  background-color: rgb(245, 245, 245);
+  color: rgb(0, 0, 0);
+
+}
+
+.editingTubCotainer a.nonActiveItem:hover {
+  background: rgba(223, 237, 214);
+}
+
+.editingTubCotainer a.activeItem:hover {
+  background: rgba(223, 237, 214);
+}
+
+.searchContainer {
+  width: 120px;
+  display: flex;
+  float: right;
+}
+
+.searchHolder {
+  width: 80px;
+  height: 27px;
+  border: none;
+  border-radius: 2px;
+  color: rgb(0, 0, 0);
+  background-color: rgba(223, 237, 214);
+  margin-left: 5px;
+  margin-right: 15px;
+  margin-top: 15px;
+  border-color: rgb(0, 0, 0, .2);
+
+}
+
+#AddSoldier {
+  text-align: center;
+}
+
+.searchHolderSubmited {
+  width: 28px;
+  height: 28px;
+  border-style: none;
+  background-color: white;
+  margin-top: 15px;
+}
+
+.textHolder {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.aSoldaier {
+  width: 80px;
+  height: 80px;
+  margin-left: 10px;
+}
+
+.aCounaiter {
+  float: right;
+  height: fit-content;
+  width: fit-content;
+  margin-top: 20px;
+}
+
+.objImage {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.disc {
+  width: fit-content;
+  height: fit-content;
+  margin-left: 123px;
+  margin-top: 35px;
+}
+
+.buffer {
+  width: 100%;
+  height: 2px;
+  background-color: #111;
+  margin-top: 15px;
+}
+
+#ProfileHolder {
+  display: flex;
+  width: 360px;
+  height: 129px;
+}
+
+#ProfileHolder img {
+  height: 111px;
+  width: 111px;
+  margin-top: 10px;
+  margin-left: 234px;
+  position: relative;
+}
+
+h3 {
+  font-size: 16px;
+}
+
+#ProfileHolder span {
+  position: absolute;
+}
+
+#ProfileHolder a {
+  position: absolute;
+}
+
+#ProfileHolder button {
+  position: absolute;
+}
+
+#ProfileHolder h3 {
+  font-weight: normal;
+  position: absolute;
+  margin-left: 143px;
+  margin-top: 30px;
+}
+
+#BneiBrak {
+  margin-top: 48px;
+  margin-left: 112px;
+  font-size: 12px;
+}
+
+#LastLocation {
+  margin-top: 60px;
+  margin-left: 152px;
+  font-size: 14px;
+}
+
+#SoliderHouse {
+  font-size: 14px;
+  margin-top: 60px;
+  margin-left: 38px;
+  color: #0055CC;
+}
+
+#Requests {
+  background-color: #DFEDD6;
+  border-color: #DFEDD6;
+  color: #111;
+  width: 106px;
+  height: 32px;
+  margin-left: 26px;
+  margin-top: 81px;
+  padding: 0;
+  border-radius: 0;
+  border: 1px solid transparent;
+}
+
+#Time {
+  font-size: 10px;
+  color: #9D261D;
+  margin-top: 115px;
+  margin-left: 120px;
+}
+
+#Documents {
+  width: 360px;
+  height: 207px;
+  display: flex;
+}
+
+#Documents h3 {
+  font-weight: normal;
+  position: absolute;
+  margin-left: 260px;
+  margin-top: 9px;
+}
+
+.Document {
+  height: 52px;
+  width: 225px;
+  position: absolute;
+  margin-left: 91px;
+  display: flex;
+}
+
+#Document1 {
+  margin-top: 41px;
+}
+
+#Document2 {
+  margin-top: 99px;
+}
+
+#Document3 {
+  margin-top: 157px;
+}
+
+.Document i {
+  margin-left: 185px;
+  font-size: 40px;
+}
+
+.BigSpan {
+  font-size: 16px;
+  position: absolute;
+}
+
+.SmallSpan {
+  font-size: 14px;
+  position: absolute;
+  margin-top: 20px;
+  margin-left: 20px;
+  color: rgba(33, 33, 33, 0.54);
+}
+
+#Ptorim {
+  margin-left: 125px;
+}
+
+#Sherot {
+  margin-left: 98px;
+}
+
+#Work {
+  margin-left: 88px;
+}
+
+#Contacts {
+  height: 130px;
+  width: 250px;
+  margin-left: 67px;
+  margin-top: 25px;
+  display: flex;
+}
+
+#Contacts .BigSpan {
+  margin-top: 0px;
+  margin-left: 80px;
+}
+
+.Contacts i {
+  font-size: 30px;
+  margin-left: 217px;
+  position: absolute;
+}
+
+.Contacts span {
+  position: absolute;
+}
+
+#FirstContact i {
+  margin-top: 30px;
+}
+
+#SecondContact i {
+  margin-top: 80px;
+}
+
+#Contact1 {
+  margin-top: 26px;
+  margin-left: 119px;
+  font-size: 16px;
+}
+
+#Phone1 {
+  font-size: 14px;
+  margin-top: 48px;
+  margin-left: 20px;
+}
+
+#Contact2 {
+  margin-top: 80px;
+  margin-left: 119px;
+  font-size: 16px;
+}
+
+#Phone2 {
+  font-size: 14px;
+  margin-top: 102px;
+  margin-left: 20px;
+}
+
+#Php {
+  height: 640px;
+  width: 360px;
+  margin: 0 auto;
+  background-color: white;
+  overflow: hidden;
+}
+
+#favoriteHolder {
+  height: 130px;
+  margin-top: 5px;
+  width: 100%;
+  display: flex;
+}
+
+.favorite {
+  width: 112px;
+  height: 103px;
+  position: relative;
+}
+
+#hFavorite {
+  margin-left: 275px;
+  font-size: 16px;
+}
+
+.favorite img {
+  width: 115px;
+  height: 130px;
+}
+
+#fav1 {
+  margin-left: 6px;
+  display: flex;
+}
+
+#fav2 {
+  margin-left: 6px;
+  display: flex;
+}
+
+#fav3 {
+  margin-left: 6px;
+  display: flex;
+}
+
+.favSpan {
+  font-size: 10px;
+  position: absolute;
+  color: black;
+  margin-top: 107px;
+  margin-left: 10px;
+}
+
+.rec {
+  margin-top: 106px;
+  background-color: rgb(255, 255, 255, .7);
+  position: absolute;
+  width: 112px;
+  height: 20px;
+}
+
+/*favorite*/
+/*selected*/
+#selectDisplayHolder {
+  margin-right: 6px;
+  margin-top: 10px;
+  width: 160px;
+  display: flex;
+  float: right;
+}
+
+.selectContainer {
+  float: right;
+  width: 160px;
+}
+
+.selectContainer a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.selectContainer a.activeItem {
+  background: rgba(223, 237, 214);
+  color: black;
+}
+
+.selectContainer a.nonActiveItem {
+  background-color: rgb(245, 245, 245);
+  color: rgb(0, 0, 0);
+
+}
+
+.selectContainer a.nonActiveItem:hover {
+  background: rgba(223, 237, 214);
+}
+
+/*List*/
+#ListTubHolder {
+  margin-top: 10px;
+  width: 100%;
+  display: block;
+  float: right;
+}
+
+.selectTubContainer {
+  width: 100%;
+  float: right;
+  margin-right: 6px;
+}
+
+.selectTubContainer a {
+  float: right;
+  display: block;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.selectTubContainer a.activeItem {
+  background: rgba(223, 237, 214);
+  color: black;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.selectTubContainer a.nonActiveItem {
+  background-color: rgb(245, 245, 245);
+  color: rgb(0, 0, 0);
+
+}
+
+.selectTubContainer a.nonActiveItem:hover {
+  background: rgba(223, 237, 214);
+}
+
+/*Articels*/
+#articlesHolder {
+  display: flex;
+  width: 100%;
+  margin-right: 6px;
+}
+.arct img{
+  width: 147px;
+  height: 160px;
+}
+#arct1 {
+  margin-left: 26px;
+  margin-top: 5px;
+  display: flex;
+}
+
+#arct2 {
+  margin-left: 23px;
+  margin-top: 5px;
+  display: flex;
+}
+
+.rec2 {
+  width: 145px;
+  height: 77px;
+  background-color: rgb(255, 255, 255, .8);
+  position: absolute;
+  margin-top: 85px;
+  display: flex;
+}
+
+#arctSpan1 {
+  font-size: 12px;
+  position: absolute;
+  color: black;
+  margin-top: 110px;
+  margin-left: 15px;
+}
+
+#arctSpan2 {
+  font-size: 12px;
+  position: absolute;
+  color: black;
+  margin-top: 110px;
+  margin-left: 25px;
+}
+
+.h3Arct {
+  font-size: 16px;
+  position: absolute;
+  color: black;
+  margin-top: 83px;
+  margin-left: 67px;
+}
+
+#arctA1 {
+  color: #0055CC;
+  font-size: 12px;
+  margin-top: 140px;
+  margin-left: 68px;
+  position: absolute;
+}
+
+#arctA2 {
+  color: #0055CC;
+  font-size: 12px;
+  margin-top: 140px;
+  margin-left: 236px;
+  position: absolute;
+}
+
+#Events {
+  margin-top: 23px;
+  margin-left: 280px;
+}
+
+#upcomingEvemtsHolder {
+  display: flex;
+}
+
+#EventsImg {
+  width: 126px;
+  height: 83px;
+  margin-left: 215px;
+  margin-top: 50px;
+  position: absolute;
+}
+
+#upcomingEvemtsHolder p {
+  font-size: 12px;
+  margin-top: 50px;
+  margin-left: 38px;
+  position: absolute;
+}
+
+#Video1 {
+  width: 360px;
+}
+
+#ProfileSoliderHouse {
+  z-index: 1;
+  position: relative;
+  margin-top: -40px;
+  margin-left: 235px;
+}
+
+
+#DetailHolder {
+  width: 360px;
+  display: flex;
+}
+
+#DetailHeadline {
+  margin-left: 100px;
+  font-size: 16px;
+}
+
+.menu-nav {
+  justify-content: space-between;
+}
+
+.menu-item {
+  color: #FCC;
+  padding: 3px;
+}
+
+.three-dots:after {
+  cursor: pointer;
+  color: #444;
+  content: '\2807';
+  font-size: 20px;
+  padding: 0 5px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a div {
+  padding: 2px;
+}
+
+.dropdown {
+  position: absolute;
+  right: 10px;
+  background-color: #66D;
+
+  outline: none;
+  opacity: 0;
+  z-index: -1;
+  max-height: 0;
+  transition: opacity 0.1s, z-index 0.1s, 5s;
+}
+
+.dropdown-container:focus {
+  outline: none;
+}
+
+.dropdown-container:focus .dropdown {
+  opacity: 1;
+  z-index: 100;
+  max-height: 100vh;
+  transition: opacity 0.2s, z-index 0.2s;
+}
+
+.buffer {
+  width: 100%;
+  height: 2px;
+  background-color: #111;
+  margin-top: 15px;
+}
+
+#Php span {
+  font-size: 40px;
+}
+.clear{
+  clear: both;
+}
+label {
+  font-size: 20px;
+}
+#AddSoldier span {
+  font-size: 20px;
+}
+#upcomingEvemtsHolder p {
+  font-size: 11px
+}
+
+#lightBoxDelete{
+  position: absolute;
+  top: 50%;
+  left: 28%;
+  transform: translate(0, -50%);
+  margin: auto;
+  background-color: #111;
+  width: 200px;
+  height: 300px;
+  background: #DFEDD6;
+  display: none;
+}
+
+#LightBox {
+  position: absolute;
+  top: 50%;
+  left: 28%;
+  transform: translate(0, -50%);
+  margin: auto;
+  background-color: #111;
+  width: 200px;
+  height: 300px;
+  background: #DFEDD6;
+  display: none;
+}
+#FormObject {
+  text-align: center;
+}
+
+
+
+
+
+
+#container{
+  width: 100%;
+  height: 667px;
+}
+#loginID{
+  border-color: #DFEDD6;
+  border-width: 3px; 
+  width: 100%;
+  margin: 0 auto;
+}
+#loginPass{
+  border-color: #DFEDD6;
+  border-width: 3px;
+  width: 100%;
+  margin: 0 auto;
+
+}
+#logoIndex{
+  background-image: url("../images/logo1.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 120px;
+  width: 160px;
+  display: flex;
+  margin: 0 auto;
+}
+#submitButton{
+  background-color: #DFEDD6;
+  color: black;
+  border-width: 0;
+  margin: 0 auto;
+  display: flex;
+}
+#lableID{
+  margin: 0 auto;
+  display: flex;
+  width: 5%;
+  margin-bottom: 20px;
+  font-size: 30px;
+  margin-top: 20px;
+}
+#labelpass{
+  margin: 0 auto;
+  display: flex;
+  width: 10%;
+  margin-bottom: 20px;
+  font-size: 30px;
+}
+/*RESPONSIVE*/
+@media only screen and (min-width : 1080px) {
+  #Wrapper {
+    width: 80%;
+    float: left;
+  }
+  #menuHolder{
+    margin: 0;
+  }
+  #headerHolder{
+    width: 100%;
+    display: flex;
+  }
+  .disc {
+    margin-left: 20px;
+    margin-top: 5px;
+  }
+  #listHolder {
+    margin-top: 50px;
+    width: 800px;
+  }
+  #beforeListHolder{
+    width: 100%;
+    position: relative;
+  }
+  .searchHolder {
+    width: 120px;
+    height: 35px;
+    font-size: 26px;
+    text-align: center;
+  }
+  #SearchLogo{
+    width: 27px;
+    height: 27px;
+    margin-top: 7px;
+  }
+  #editingCotainer{
+    position: relative;
+    display: block;
+  }
+  #logo {
+    height: 100px;
+    width: 120px;
+  }
+  .editingTubCotainer {
+    float: right;
+  }
+  .editingTubCotainer a {
+    float: right;
+    font-size: 22px;
+  }
+  .searchContainer {
+    width: 100px;
+    float: right;
+    margin: 0 auto;
+  }
+  main {
+    display: flex;
+  }
+  h1 {
+    font-size: 26px;
+  }
+  h4, h5 {
+    font-size: 22px;
+  }
+  .page3 main{
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+  }
+  #Object h3 {
+    font-size: 23px;
+    margin-left: 100px;
+    margin-top: 10px;
+  }
+  #BneiBrak {
+    font-size: 19px;
+    margin-left: 39px;
+    margin-top: 40px;
+  }
+  #LastLocation{
+    font-size: 21px;
+    margin-top: 62px;
+    margin-left: 110px;
+  }
+  #SoliderHouse{
+    font-size: 21px;
+    margin-top: 87px;
+    margin-left: 57px;
+  }
+  #Requests {
+    margin-left: 26px;
+    margin-top: 115px;
+    font-size: 20px;
+  }
+  #Time {
+    font-size: 17px;
+    margin-top: 145px;
+    margin-left: 100px;
+  }
+  #Documents h3 {
+    margin-left: 260px;
+    margin-top: 9px;
+  }
+  
+  .Document {
+    margin-left: 96px;
+  }
+  
+  #Document1 {
+    margin-top: 45px;
+  }
+  
+  #Document2 {
+    margin-top: 110px;
+  }
+  
+  #Document3 {
+    margin-top: 175px;
+  }
+  
+  .Document i {
+    margin-left: 185px;
+    font-size: 60px;
+  }
+  
+  .BigSpan {
+    font-size: 23px;
+    position: absolute;
+  }
+  
+  .SmallSpan {
+    font-size: 21px;
+    position: absolute;
+    margin-top: 30px;
+    margin-left: 82px;
+    color: rgba(33, 33, 33, 0.54);
+  }
+  
+  #Ptorim {
+    margin-left: 110px;
+  }
+  
+  #Sherot {
+    margin-left: 70px;
+  }
+  
+  #Work {
+    margin-left: 55px;
+  }
+
+  #Contacts {
+    height: 250px;
+    width: 350px;
+    margin-right: 14px;
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  .Contacts i {
+    float: right;
+    position: relative;
+    margin-left: 0px;
+  }
+  #Contacts .BigSpan {
+    position: relative;
+    float: right;
+    height: 50px;
+  }
+
+  .Contacts span {
+    float: right;
+    position: relative;
+    
+  }
+  #FirstContact, #SecondContact {
+    width: 150px;
+    height: 100px;
+    display: block;
+    position: relative;
+  }
+  #FirstContact i {
+    margin-top: 0px;
+  }
+  
+  #SecondContact i {
+    margin-top: 0px;
+  }
+  
+  #Contact1 {
+    margin-top: 0px;
+    margin-left: 0px;
+    font-size: 23px;
+  }
+  
+  #Phone1 {
+    margin-top: 0px;
+    margin-left: 0px;
+    font-size: 21px;
+  }
+  
+  #Contact2 {
+    margin-top: 0px;
+    margin-left: 0px;
+    font-size: 23px;
+  }
+  
+  #Phone2 {
+    margin-top: 0px;
+    margin-left: 0px;
+    font-size: 21px;
+  }
+  
+  #SoldierMain {
+    flex-direction: column;
+    align-items: flex-end
+  }
+  #hFavorite {
+    margin-left: 0px;
+    font-size: 23px;
+  }
+  #favoriteHolder {
+    justify-content: flex-end;
+    height: 180px;
+    margin-right: 6px;
+  }
+  #articlesHolder {
+    justify-content: flex-end;
+  }
+  #articlesHolder img {
+    width: 150px;
+    height: 170px;
+  }
+  .favorite img {
+    width: 150px;
+    height: 170px;
+  }
+  .rec {
+    margin-top: 126px;
+    background-color: rgb(255, 255, 255, .7);
+    width: 146px;
+    height: 40px;
+  }
+  .favorite {
+    width: 150px;
+    height: 170px;
+    position: relative;
+  }
+  .favSpan {
+    font-size: 16px;
+    margin-top: 126px;
+    margin-left: 0px;
+  }
+  .selectContainer {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .selectContainer a{
+    font-size: 23px;
+  }
+  .selectTubContainer a{
+    font-size: 23px;
+  }
+  .rec2 {
+    width: 146px;
+    height: 60px;
+    margin-top: 106px;
+  }
+  .h3Arct {
+    font-size: 20px;
+    color: black;
+    margin-top: 100px;
+    margin-left: 60px;
+  }
+  #arctSpan1 {
+    font-size: 14px;
+    margin-top: 125px;
+    margin-left: 10px;
+  }
+  #arctSpan2 {
+    font-size: 14px;
+    margin-top: 125px;
+    margin-left: 15px;
+  }
+  #arctA2 {
+    margin-top: 150px;
+    margin-left: 236px;
+  } 
+  #arctA1 {
+    margin-top: 150px;
+    margin-right: 173px;
+    
+  }
+  #upcomingEvemtsHolder {
+    width: 600px;
+    height: 100%;
+  }
+  #Events {
+    margin-top: 23px;
+    margin-left: 510px;
+    font-size: 23px;
+  }
+  #EventsImg {
+    width: 275px;
+    height: 170px;
+    margin-left: 320px;
+    margin-top: 60px;
+  }
+  #upcomingEvemtsHolder p {
+    font-size: 18px;
+    margin-top: 70px;
+    margin-left: 30px;
+  }
+  #LightBox {
+    position: absolute;
+    top: 50%;
+    left: 28%;
+    transform: translate(0, -50%);
+    margin: auto;
+    background-color: #111;
+    width: 350px;
+    height: 450px;
+    background: #DFEDD6;
+    display: none;
+  }
+  #LightBox h2{
+    float: right;
+  }
+  #LightBox h3 {
+    float: right;
+  }
+  #LightBox p {
+    font-size: 16px;
+    float: right;
+  }
+  #LightBox select {
+    margin-left: 48px;
+  }
+  label {
+    font-size: 30px;
+  }
+  #Big {
+    font-size: 26px;
+  }
+}
+  /*end of media 1080px*/
+  @media screen and (max-height: 450px) {
+    .sidenav {
+      padding-top: 15px;
+    }
+  
+    .sidenav a {
+      font-size: 18px;
+    }
+  }
+
+
